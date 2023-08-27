@@ -8,7 +8,7 @@ class TV:
         self.canal = 1
         self.volumen = 1
         self.precio = 500
-        numTV +=1
+        TV.numTV +=1 #los métodos referencian los atributos con el nombre de la clase
 
     def setMarca(self, marca):
         self.marca = marca
