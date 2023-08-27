@@ -7,6 +7,11 @@ class Control:
         self.tv = tv
         tv.setControl(self)
 
+    def setTv(self, tv):
+        self.tv = tv
+    def getTv(self):
+        return self.tv
+
     def turnOn(self):
         self.tv.turnOn()
     def turnOff(self):
