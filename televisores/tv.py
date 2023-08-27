@@ -8,13 +8,15 @@ class TV:
         self.canal = 1
         self.volumen = 1
         self.precio = 500
+        numTV +=1
 
     def setMarca(self, marca):
         self.marca = marca
     def getMarca(self):
         return self.marca
     def setCanal(self, canal):
-        self.canal = canal
+        if (canal >= 1 and canal <= 120):
+            self.canal = canal
     def getCanal(self):
         return self.canal
     def setPrecio(self, precio):
